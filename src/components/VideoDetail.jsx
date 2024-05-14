@@ -32,7 +32,13 @@ const VideoDetail = () => {
     <Box minHeight="95vh">
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
-          <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
+          <Box
+            sx={{
+              width: "870px",
+              position: "sticky",
+              top: "86px",
+            }}
+          >
             <ReactPlayer
               url={`https://www.youtube.com/watch?v=${id}`}
               className="react-player"
@@ -76,7 +82,7 @@ const VideoDetail = () => {
           justifyContent="center"
           alignItems="center"
         >
-          <Videos videos={videos} />
+          <Videos videos={videos} direction="column" />
         </Box>
       </Stack>
     </Box>
